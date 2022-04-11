@@ -5,7 +5,7 @@ variable "elb_name" {
 
 variable "azs" {
   type = list
-  default = ["ap-southeast-1a","ap-southeast-1b"]
+  default = ["ap-southeast-2a","ap-southeast-2b"]
 }
 
 variable timeout {
