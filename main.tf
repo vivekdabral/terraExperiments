@@ -36,7 +36,7 @@ resource "aws_elb" "bar" {
     Name = "foobar-terraform-elb"
   }
 
-  outputs "output_var" {
+  output "output_var" {
     value = aws_alb.bar.id
   }
 }
