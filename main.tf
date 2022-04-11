@@ -39,14 +39,10 @@ resource "aws_elb" "bar" {
 
 provider "aws" {
   alias = "first-region"
-  region     = "ap-southeast-2"
-
-}
-
-provider "aws" {
-  alias = "second-region"
   region     = "ap-southeast-1"
+
 }
+
 
 terraform {
   required_providers {
