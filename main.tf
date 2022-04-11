@@ -35,11 +35,15 @@ resource "aws_elb" "bar" {
   tags = {
     Name = "foobar-terraform-elb"
   }
+
+  outputs "output_var" {
+    value = aws_alb.bar.id
+  }
 }
 
 provider "aws" {
   alias = "first-region"
-  region     = "ap-southeast-1"
+  region     = "ap-southeast-2"
 
 }
 
