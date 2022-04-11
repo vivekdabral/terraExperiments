@@ -36,3 +36,14 @@ resource "aws_elb" "bar" {
     Name = "foobar-terraform-elb"
   }
 }
+
+provider "aws" {
+  alias = "first-region"
+  region     = "ap-southeast-2"
+
+}
+
+provider "aws" {
+  alias = "second-region"
+  region     = "ap-southeast-1"
+}
