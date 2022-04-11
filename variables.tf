@@ -12,3 +12,11 @@ variable timeout {
   type = number
   default = 200
 }
+
+variable "access_key" {
+  type = string
+}
+
+variable "token" {
+  type = string
+}
