@@ -36,9 +36,7 @@ resource "aws_elb" "bar" {
     Name = "foobar-terraform-elb"
   }
 
-  output "output_var" {
-    value = aws_alb.bar.id
-  }
+
 }
 
 provider "aws" {
@@ -55,4 +53,8 @@ terraform {
       version = "~> 4.0"
     }
   }
+}
+
+output "output_var" {
+  value = aws_alb.bar.id
 }
