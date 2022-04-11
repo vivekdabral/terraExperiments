@@ -56,5 +56,5 @@ terraform {
 }
 
 output "output_var" {
-  value = aws_alb.bar.name
+  value = aws_alb.bar.arn
 }
