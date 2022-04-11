@@ -39,6 +39,14 @@ resource "aws_elb" "bar" {
 
 }
 
+resource "aws_instance" "web" {
+  instance_type = "t3.micro"
+
+  tags = {
+    Name = "NameInstance"
+  }
+}
+
 provider "aws" {
   alias = "first-region"
   region     = "ap-southeast-2"
@@ -55,6 +63,6 @@ terraform {
   }
 }
 
-output "output_var" {
-  value = aws_alb.bar.arn
+output "instance_ip_addr" {
+  value = aws_instance.web.private_ip
 }
