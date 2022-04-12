@@ -15,10 +15,8 @@ variable timeout {
 
 variable "access_key" {
   type = string
-  default = "AKIA3AUEIQTRK7AFRN7H"
 }
 
 variable "token" {
   type = string
-  default = "Y//Z2qQ6FmmRbMvWX02Yotr4+lc6qkBBY4a1tf4a"
 }
